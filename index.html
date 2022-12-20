@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Morty</title>
+    <script defer src="app.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+         #eyes, #eyes img {
+            position: absolute;
+        }
+        .eyes {
+            position: absolute;
+        }
+
+        #anchor {
+            display: block;
+            width: 400px;
+        }
+
+        .eyes img {
+            width: 37px;
+            height: 37px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <img src="images/Look_Morty.jpg" alt="" id="anchor">
+        <div class="eyes" id="eyes">
+            <img class="eye" src="images/eye.jpg" alt="" style="top:-72px; left:36px;">
+            <img class="eye" src="images/eye.jpg" alt="" style="top:-76px; left: 89px;">
+            <img class="eye" src="images/eye.jpg" alt="" style="top: 45px; left: -37px;">
+            <img class="eye" src="images/eye.jpg" alt="" style="top: 55px; left: -95px;">
+        </div>
+    </main>
+</body>
+</html>
