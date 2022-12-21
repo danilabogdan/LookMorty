@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Look Morty</title>
     <script defer src="app.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <style>
         body {
             background-color: #000;
@@ -15,9 +19,10 @@
         }
 
         main {
+            background-color: #fff;
             display: grid;
             place-items: center;
-            min-height: 100vh;
+            min-height: 47vh;
             position: relative;
         }
 
@@ -41,7 +46,60 @@
 
     </style>
 </head>
-<body>
+<body class="fixed-top">
+
+    <section class="container">
+        <div class="text-center">
+            <h2 class="mt-3">Get in touch</h2>
+            <p class="lead">Questions? Do not hesitate to contact me.</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form action="https://formsubmit.co/1e7075a9795de41079ca40fbf456fb66" method="POST" class="text-black">
+
+                    <div class="form-floating my-3">
+                        <input 
+                        type="email" 
+                        id="email"
+                        placeholder="Email"
+                        class="form-control"
+                        required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+
+                    <div class="form-floating my-3"> 
+                        <input 
+                        type="name" 
+                        id="name"
+                        placeholder="Name"
+                        class="form-control"
+                        required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+
+                        <label for="subject" class="form-label text-white">Subject</label>
+                        <select name="subject" id="subject" class="form-control">
+                            <option selected value="Say Hello!">Say Hello!</option>
+                            <option value="Report a issue">Report a issue.</option>
+                        </select>
+
+                    <div class="form-floating my-5">
+                    <textarea 
+                    name="query" 
+                    id="query"
+                    style="height: 160px;"
+                    placeholder="Say something."
+                    class="form-control"></textarea>
+                    <label for="query">Write something!</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-light mt-4 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     
     <main>
         <img src="images/Look_Morty.jpg" alt="" id="anchor">
@@ -52,5 +110,14 @@
             <img class="eye" src="images/eye.jpg" alt="" style="top: 55px; left: -95px;">
         </div>
     </main>
+    
+    <footer class="text-center text-white fixed-bottom" style="background-color: #000;">
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="https://danilabogdan.tech" target="_blank">Danila Bogdan</a>
+        </div>
+
+      </footer>
 </body>
 </html>
